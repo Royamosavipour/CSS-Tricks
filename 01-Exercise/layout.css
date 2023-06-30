@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat Subrayada", sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+}
+.tex {
+  text-align: center;
+  font-size: 50px;
+  color: white;
+  margin-top: 2rem;
+  animation: right 3s ease-in;
+}
+
+.img {
+  text-align: center;
+  animation: left 4s ease-out;
+}
+
+.left {
+  color: white;
+  cursor: pointer;
+}
+
+.link-li {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  margin-left: 2rem;
+}
+.link-li:hover{
+    transform: scale(1.2);
+    border-bottom: 2px solid white;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  margin: 0 2rem;
+  list-style: none;
+}
+
+.nav {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.siz-B {
+  font-size: 5rem;
+  color: red;
+}
+
+i{
+    color: white;
+    margin-top:1rem;
+}
+.icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    margin-left: 2rem;
+}
+.font-color{
+color: white;
+
+}
+
+
+@keyframes right {
+    0%{
+        opacity: 0;
+        transform: translateX(-300px);
+
+    }
+    90%{
+        transform: translateX(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes left {
+    0%{
+        transform: translateX(300px);
+        opacity: 0;
+    }
+    90%{
+        transform: translateX(-50px);
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    
+}
